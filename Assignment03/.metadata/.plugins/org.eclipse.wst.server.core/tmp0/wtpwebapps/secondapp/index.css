@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+
+h1 {
+	background-color: black;
+	color: white;
+	border: solid;
+	margin: 50px;
+}
+
+div {
+	border: thick; 
+	border-color: #004080;
+	height: 300px;
+	width: 300px;
+	
+}
+

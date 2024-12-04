@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="index.css">
+<title>New User</title>
+</head>
+<body>
+
+	<table border="1">
+	<tr> <th>ID :</th> <input type="number" placeholder="ID" /> <th></th></tr> 
+	<tr> <th>First Name :</th> <input type="text" placeholder="first_name" /> <th></th></tr> 
+	<tr> <th>Last Name :</th> <input type="text" placeholder="last_name" /> <th></th></tr> 
+	<tr> <th>Email   :</th> <input type="email" placeholder="abc@gmail.com" /> <th></th></tr> 
+	<tr> <th> password  :</th> <input type="text" placeholder="password" /> <th></th></tr> 
+	<tr> <th> DOB   :</th> <input type="Date" placeholder="date" /> <th></th></tr> 
+	<tr> <th> status   :</th> <input type="number" placeholder="Status" /> <th></th></tr> 
+	<tr> <th> role    :</th> <input type="text" placeholder="role" /> <th></th></tr> 
+	
+	</table>
+
+</body>
+</html>

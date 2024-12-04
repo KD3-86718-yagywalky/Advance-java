@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="index.css" />
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="registrationcandidate" method="post>
+<table border="1">
+	<tr> <th>Name :</th> <input type="text" placeholder="first_name" /> <th></th></tr> 
+	<tr> <th>party :</th> <input type="text" placeholder="last_name" /> <th></th></tr> 
+	<tr> <th> Votes   :</th> <input type="number" placeholder="Status" /> <th></th></tr> 
+
+	
+	</table>
+	
+	<input type="submit" value="Submit"/>
+	</form>
+
+</body>
+</html>
