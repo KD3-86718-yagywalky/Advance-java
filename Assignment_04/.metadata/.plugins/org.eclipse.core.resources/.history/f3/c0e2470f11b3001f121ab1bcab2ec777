@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+</head>
+<body>
+		<h2>Register page</h2>
+		
+		<jsp:useBean id="c" class="com.sunbaeam.jsp.Registration"></jsp:useBean>
+		
+		<jsp:setProperty property="*" name="c"/>
+		
+		
+		${c.saveUser()}
+		
+		<c:choose>
+		<c:when test="${c.saveUser()} == 1">
+			<h3>Registration Successful</h3>
+		</c:when>
+		<c:otherwise>
+				<h3>Registration Failed</h3>
+		</c:otherwise>
+	</c:choose>
+		
+	
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.zip.ZipEntry"/>
+    <fullyQualifiedTypeName name="com.sunbeam.daos.UserDaoImpl"/>
+    <fullyQualifiedTypeName name="com.sunbeam.daos.UserDao"/>
+    <fullyQualifiedTypeName name="com.sunbeam.entities.User"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body style="text-align: center;">
+
+<h2>Add a New User </h2>
+<div style="height: 200px; width: 200px; border: solid;">
+
+<form action="register.jsp" method="post">
+First Name : <input type="text" name="fname" placeholder="FirstName"> 
+Last Name : <input type="text" name="lname" placeholder="LastName"> 
+Email : <input type="email" name="email" placeholder="abc@gmail.com"> 
+Password : <input type="password" name="passwd" placeholder="Password"> 
+DOB : <input type="text" name="date" placeholder="date"> 
+<input type="submit" value="Register"> 
+</form>
+</body>
+</html>

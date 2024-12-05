@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+</head>
+<body>
+		<h2>Register page</h2>
+		
+		<jsp:useBean id="c" class="com.sunbaeam.jsp.Registration"></jsp:useBean>
+		
+		<jsp:setProperty property="*" name="c"/>
+		
+		${c.Registration()}
+		
+</body>
+</html>

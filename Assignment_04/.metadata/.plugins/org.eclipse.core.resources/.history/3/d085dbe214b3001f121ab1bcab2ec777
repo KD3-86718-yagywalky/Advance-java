@@ -1,0 +1,9 @@
+package com.sunbaeam.jsp;
+
+public class UserLogin {
+	
+	private String email;
+	private String passwd;
+	
+
+}

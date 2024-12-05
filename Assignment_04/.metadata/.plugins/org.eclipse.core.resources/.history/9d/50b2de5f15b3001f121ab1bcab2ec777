@@ -1,0 +1,52 @@
+package com.sunbaeam.jsp;
+
+import com.sunbeam.daos.UserDaoImpl;
+
+public class UserLogin {
+	
+	private String email;
+	private String passwd;
+	
+	public UserLogin(String email, String passwd) {
+		this.email = email;
+		this.passwd = passwd;
+	}
+
+	public UserLogin() {
+	
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPasswd() {
+		return passwd;
+	}
+
+	public void setPasswd(String passwd) {
+		this.passwd = passwd;
+	}
+	
+	public void login()
+	{
+		try {
+			UserDao user = new UserDaoImpl()
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	
+	
+	
+
+}
