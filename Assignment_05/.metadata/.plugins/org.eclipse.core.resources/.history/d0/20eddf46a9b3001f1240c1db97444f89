@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ResultList</title>
+</head>
+<body>
+<center>
+	<h1>Result table</h1>
+	
+	<jsp:useBean id="cd" class="com.sunbaeam.jsp.ResultList"></jsp:useBean>
+	${cd.getAllCandidate()}
+	<table>
+			<thead>
+			<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Party</th>
+			<th>Votes</th>
+			<th>Action</th>
+			</tr>
+			</thead>
+			
+			<tr>
+			<td>${cd.candlist.id}</td>
+			<td>${cd.candlist.name}</td>
+			<td>${cd.candlist.party}</td>
+			<td>${cd.candlist.votes}</td>
+			<td></td>
+			
+			</tr>
+	
+	</table>
+
+</body>
+</html>

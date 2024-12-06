@@ -1,0 +1,28 @@
+package com.sunbaeam.jsp;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sunbeam.entities.Candidate;
+
+public class CandidateListBean {
+	
+	private List<Candidate> candlist;
+
+	public CandidateListBean() {
+		candlist = new ArrayList<Candidate>();
+	}
+
+	public List<Candidate> getCandlist() {
+		return candlist;
+	}
+
+	public void setCandlist(List<Candidate> candlist) {
+		this.candlist = candlist;
+	}
+	
+	public void findAllC
+	
+	
+
+}

@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Candidate</title>
+</head>
+<body>
+	<jsp:useBean id="up" class="com.sunbaeam.jsp.UpdateCandidateBean" />
+	<jsp:setProperty name="up" property="*" />
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.sunbaeam.jsp.CandidateListBean.java&apos; to &apos;VoteBean.java&apos;&#x0D;&#x0A;- Original project: &apos;Assignment04&apos;&#x0D;&#x0A;- Original element: &apos;com.sunbaeam.jsp.CandidateListBean.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.sunbaeam.jsp.VoteBean.java&apos;" description="Rename compilation unit &apos;CandidateListBean.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;com.sunbaeam.jsp{CandidateListBean.java" name="VoteBean.java" references="false" stamp="1733479627221" version="1.0"/>
+</session>

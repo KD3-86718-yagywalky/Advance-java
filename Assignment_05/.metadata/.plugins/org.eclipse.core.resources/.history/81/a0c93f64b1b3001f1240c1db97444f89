@@ -1,0 +1,40 @@
+package com.sunbaeam.jsp;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sunbeam.daos.CandidateDao;
+import com.sunbeam.daos.CandidateDaoImpl;
+import com.sunbeam.entities.Candidate;
+
+public class ResultList {
+	
+	List<Candidate> candlist;
+
+	public ResultList() {
+		this.candlist = new ArrayList<Candidate>();
+	}
+
+	public List<Candidate> getCandlist() {
+		return candlist;
+	}
+
+	public void setCandlist(List<Candidate> candlist) {
+		this.candlist = candlist;
+	}
+	
+	public void getAllCandidate() {
+		
+		try (CandidateDao candao = new CandidateDaoImpl()){
+			
+			candlist = candao.findAll(); 
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException();
+		}
+	}
+	
+	
+
+}
