@@ -1,0 +1,13 @@
+package com.sunbeam.dao;
+
+import com.sunbeam.entities.Teams;
+
+public class TeamDaoImpl implements TeamDao {
+
+	@Override
+	public String signUpTeam(Teams team) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,112 @@
+package com.sunbeam.entities;
+
+import javax.persistence.*;
+
+
+@Entity
+@Table(name = "teams")
+public class Teams {
+	
+	private long team_id;
+	private String name;
+	private String abbreviation;
+	private String owner;
+	private int max_player_age;
+	private double batting_avg;
+	private int wicket_taken;
+	
+//	team_id bigint primary key auto_increment,name varchar(100) unique ,abbreviation varchar(10)
+//	unique,owner varchar(20) not null,max_player_age int,
+//	batting_avg double,wickets_taken int)
+	
+	public Team() {
+	
+	}
+	
+	public Team(long team_id, String name, String abbreviation, String owner, int max_player_age, double batting_avg,
+			int wicket_taken) {
+		super();
+		this.team_id = team_id;
+		this.name = name;
+		this.abbreviation = abbreviation;
+		this.owner = owner;
+		this.max_player_age = max_player_age;
+		this.batting_avg = batting_avg;
+		this.wicket_taken = wicket_taken;
+	}
+
+	public long getTeam_id() {
+		return team_id;
+	}
+
+	public void setTeam_id(long team_id) {
+		this.team_id = team_id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAbbreviation() {
+		return abbreviation;
+	}
+
+	public void setAbbreviation(String abbreviation) {
+		this.abbreviation = abbreviation;
+	}
+
+	public String getOwner() {
+		return owner;
+	}
+
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+
+	public int getMax_player_age() {
+		return max_player_age;
+	}
+
+	public void setMax_player_age(int max_player_age) {
+		this.max_player_age = max_player_age;
+	}
+
+	public double getBatting_avg() {
+		return batting_avg;
+	}
+
+	public void setBatting_avg(double batting_avg) {
+		this.batting_avg = batting_avg;
+	}
+
+	public int getWicket_taken() {
+		return wicket_taken;
+	}
+
+	public void setWicket_taken(int wicket_taken) {
+		this.wicket_taken = wicket_taken;
+	}
+
+	@Override
+	public String toString() {
+		return "Team [team_id=" + team_id + ", name=" + name + ", abbreviation=" + abbreviation + ", owner=" + owner
+				+ ", max_player_age=" + max_player_age + ", batting_avg=" + batting_avg + ", wicket_taken="
+				+ wicket_taken + "]";
+	}
+	
+	
+
+
+	
+	
+
+
+	
+	
+	
+	
+}
