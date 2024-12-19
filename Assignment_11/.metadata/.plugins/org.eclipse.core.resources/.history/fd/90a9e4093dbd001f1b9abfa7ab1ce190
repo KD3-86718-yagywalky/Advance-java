@@ -1,0 +1,14 @@
+package com.uop.service;
+
+import java.util.List;
+
+import org.springframework.data.domain.jaxb.SpringDataJaxb.OrderDto;
+
+import com.uop.dto.OrderPlaceDTO;
+
+public interface OrderService {
+
+		String addOrder(Long userId, OrderPlaceDTO orderPlaceDTO);
+
+		List<OrderDto> getAll();
+}

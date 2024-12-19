@@ -1,0 +1,9 @@
+package com.uop.service;
+
+import com.uop.dto.UserDTO;
+
+public interface UserService {
+	
+	String addUser(UserDTO user);
+
+}

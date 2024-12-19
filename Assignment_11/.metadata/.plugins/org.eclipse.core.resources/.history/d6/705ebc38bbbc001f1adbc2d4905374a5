@@ -1,0 +1,5 @@
+package com.uop.service;
+
+public interface OrderService {
+
+}

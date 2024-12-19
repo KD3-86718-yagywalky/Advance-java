@@ -1,0 +1,47 @@
+package com.uop.pojo;
+
+import java.time.LocalDate;
+
+import org.springframework.data.annotation.CreatedDate;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Entity
+@Table(name = "order")
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
+@ToString(callSuper = true)
+public class Order extends BaseEntity{
+	
+	private String details;
+	
+	@CreatedDate
+	@Column(name = "order_date")
+	private LocalDate orderDate;
+	
+	private Integer quantity;
+	
+	private Double price;
+	
+	
+	@OneToOne
+	@JoinColumn(name = "product_details")
+	private Product productDetails;
+	
+//	@ManyToOne
+//	@JoinColumn(name = "user_details")
+//	private User userdetails;
+
+}

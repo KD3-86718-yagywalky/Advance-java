@@ -1,0 +1,57 @@
+package com.uop.service;
+
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.uop.dao.ProductDao;
+import com.uop.dao.UserDao;
+import com.uop.dto.ProductReqDTO;
+import com.uop.dto.productRespDTO;
+import com.uop.pojos.Product;
+
+@Service
+@Transactional
+public class ProductServiceimpl implements ProductService{
+
+	@Autowired
+	private ProductDao productDao;
+	
+	@Autowired
+	private ModelMapper model;
+	
+	@Autowired
+	private UserDao userDao;
+
+	public ProductServiceimpl() {
+		super();
+	}
+
+	@Override
+	public String addProduct(ProductReqDTO prod, Long userId) {
+		
+		User u = userDao.findById(userId).orElseThrow();
+		
+		Product product = model.map(prod, Product.class);
+		
+		productDao.save(product);
+		return null;
+	}
+
+	@Override
+	public List<productRespDTO> getAllProduct() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteProduct(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}

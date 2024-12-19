@@ -1,0 +1,36 @@
+package com.uop.service;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.uop.dao.UserDao;
+import com.uop.dto.UserDTO;
+import com.uop.pojos.User;
+
+@Service
+@Transactional
+public class UserServiceImpl implements UserService{
+	
+	@Autowired
+	private UserDao userDao;
+	
+	@Autowired
+	private ModelMapper model;
+
+	@Override
+	public String addUser(User user) {
+		
+		try{User u = model.map(user, User.class);
+		
+			userDao.save(u);
+		return "Ho gaya bhai save";
+		}catch (Exception e) {
+			return "nahi ho raha yaar";
+		}
+	}
+	
+	
+
+}

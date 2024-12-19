@@ -1,0 +1,14 @@
+package com.uop.dao;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.uop.dto.OrderDTO;
+import com.uop.pojos.Order;
+
+public interface OrderDao extends JpaRepository<Order, Long>{
+
+	List<OrderDTO> findByUserId(Long id);
+
+}

@@ -1,0 +1,17 @@
+package com.uop.service;
+
+import java.util.List;
+
+import com.uop.dto.ProductReqDTO;
+import com.uop.dto.productRespDTO;
+import com.uop.pojos.Product;
+
+public interface ProductService {
+	
+	String addProduct(ProductReqDTO prod, Long userId);
+	
+	List<productRespDTO> getAllProduct();
+	
+	String deleteProduct(Long id);
+
+}

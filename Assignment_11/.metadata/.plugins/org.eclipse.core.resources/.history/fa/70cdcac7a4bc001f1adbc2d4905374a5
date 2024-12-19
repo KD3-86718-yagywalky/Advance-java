@@ -1,0 +1,7 @@
+package com.uop.pojo;
+
+public enum UserRole {
+	
+	ADMIN , CUSTOMER;
+
+}

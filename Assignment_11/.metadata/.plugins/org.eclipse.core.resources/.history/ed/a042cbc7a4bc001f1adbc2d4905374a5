@@ -1,0 +1,28 @@
+package com.uop.pojo;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Entity
+@Table(name = "user")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
+public class User extends BaseEntity{
+	
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String password;
+	private UserRole role;
+	
+}

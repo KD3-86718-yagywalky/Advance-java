@@ -1,0 +1,9 @@
+package com.uop.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.uop.pojos.Order;
+
+public interface OrderDao extends JpaRepository<Order, Long>{
+
+}

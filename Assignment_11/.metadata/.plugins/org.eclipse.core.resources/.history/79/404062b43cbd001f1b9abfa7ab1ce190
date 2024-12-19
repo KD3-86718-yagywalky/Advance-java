@@ -1,0 +1,8 @@
+package com.uop.service;
+
+import com.uop.dto.OrderPlaceDTO;
+
+public interface OrderService {
+
+		String addOrder(Long userId, OrderPlaceDTO orderPlaceDTO);
+}
